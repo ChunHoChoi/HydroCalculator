@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculator - Chun Ho Choi</title>
+    <link rel="stylesheet" href="Assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tagbanwa&display=swap" rel="stylesheet">
+</head>
+<header> 
+    <h1>Electricity Usage Calculator</h1>
+</header>
+<body>
+    <div id="flexbox">
+        <div>
+            <h2>Peak hour consumption:</h2>
+            <input type="text" id="peakconsumption" placeholder="Enter peak usage in kWh"/>
+        </div>
+        <div>
+            <h2>Off-peak hour consumption:</h2>
+            <input type="text" id="offpeakconsumption" placeholder="Enter off-peak usage in kWh"/>
+        </div>
+        <div>
+        <h2>Location:</h2>
+        <select id="location">
+            <option value="a">British Columbia</option>
+            <option value="b">Ontario</option>
+        </select>
+        </div>
+        <br>
+        <div>
+        <button id="calculate">Calculate</button>
+        </div>
+    </div>
+    <br>
+    <div id="resultsheader">
+    <h1>Estimated Electricity Bill:</h1>
+    </div>
+    <div id="resultsflexbox">
+        <div class = "resultsbox">
+           <p>Peak Usage:</p>
+            <h2 id="peakcost">Placeholder</h2>
+            <p id="peakrate">peakconsumption @ rate</p>
+        </div>
+        <div class = "resultsbox">
+            <p>Off-Peak Usage:</p>
+            <h2 id="offpeakcost">Placeholder</h2>
+            <p id="offpeakrate">offpeakconsumption @ rate</p>    
+        </div>
+        <div class = "resultsbox">
+            <p>Summary of charges:</p>
+            <h2 id="grosscost">Placeholder</h2>
+            <h2 id="HSTdisplay">Placeholder</h2>
+            <h2 id="rebate">Placeholder</h2>
+            <h2 id="netcost">Placeholder</h2>
+        </div>
+    </div>
+    <script type="text/javascript" src="Assets/app.js"></script>
+</body>
+</html>
